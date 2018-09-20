@@ -15,7 +15,7 @@ with open('./demo_read.csv', 'rb') as read_file, open('./demo_write.csv', 'wb') 
     writer = csv.writer(write_file)
     # write csv
     writer.writerow(['计划id', '计划', '修改前', '修改后', '修改后-修改前', '修改前-修改后', '修改时间'])
-    # read csv
+    # read csv  
     for line in reader:
         if str(line[4]) == '否定关键词':
             before_data = line[7]
